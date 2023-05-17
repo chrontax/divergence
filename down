@@ -1,0 +1,8 @@
+#!/bin/sh
+SCRIPTPATH="$( cd "$(dirname "$0")" || exit ; pwd -P )"
+
+feh --bg-scale "$SCRIPTPATH"/reset.jpg
+
+leftwm-command "UnloadTheme"
+
+pkill picom
